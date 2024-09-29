@@ -51,7 +51,7 @@ buttons_ques = [
 
 gen_button = [
     [
-        InlineKeyboardButton(text="❃𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐒𝐄𝐒𝐒𝐈𝐎𝐍❃", callback_data="generate")
+        InlineKeyboardButton(text="▪ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ ▪️", callback_data="generate")
     ]
 ]
 
@@ -179,7 +179,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         if not is_bot:
             await client.send_message("me", text)
         else:
-            await bot.send_message(msg.chat.id, text)
+            await bot.send_message("me", text)
     except KeyError:
         pass
     await client.disconnect()
